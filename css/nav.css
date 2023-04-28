@@ -4,5 +4,99 @@
   height: 60px;
   width:100%;
   border-bottom: 1px #111 solid;
+  z-index: 9;
 
 }
+
+.iconbox{
+  height: 40px;
+  width: 40px;
+  float: left;
+  padding: 5px;
+  overflow: visible;
+  transition: 1s;
+
+}
+
+
+
+.icon{
+  height: 40px;
+  width: 40px;
+  background-image: url(../logo.svg);
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: 1s;
+  border: 6px solid #000;
+  border-radius: 5px;
+}
+
+.icon:hover{
+  border: 6px solid #333;
+  background-color: #333;
+}
+
+.buttonboxcont{
+  right:10px;
+  height:60px;
+  width: 550;
+  float:right;
+  transition: 1s;
+}
+
+.buttonbox{
+  padding: 0px;
+  float: right;
+  list-style-type: none;
+  border-spacing: 0px;
+  overflow: visible;
+  transition: 1s;
+  display: flex;
+
+  cursor: pointer;
+}
+
+.button{
+  height: 40px;
+  min-width: 110px;
+  display: inline-block;
+  padding: 12px 5px 6px 5px;
+  font-size:20px;
+  text-align: center;
+  
+  border-spacing: 0px;
+  border-bottom: #000 2px solid;
+  border-radius: 0px 0px 5px 5px;
+  transition:1s
+}
+
+.button:hover{
+
+  border-bottom: #90f 2px solid;
+  background-color: #333;
+  
+}
+
+.button a{
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .buttonboxcont{
+    transform: translate(0px, -1000px);
+    opacity: 1;
+  }
+  
+  .iconbox{
+    width: 100%;
+    text-align: center;
+  }
+  
+}
+

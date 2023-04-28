@@ -5,12 +5,95 @@
   padding: 0px;
 }
 
+html{background-color: black;}
+
 .viewport{
   background-color: #111;
   color: #fff;
   font-size: 16px;
   font-family: "Source sans pro";
-
   height: 100vh;
   width: 100vw;
+  animation: 1s ease-out 0s 1 fadein;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  background: transparent;
+}
+
+
+.background{
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center ;
+  transition: 0.5s;
+}
+
+.titlecont{
+  position:absolute;
+  top: 20vh;
+  width: 100%;
+
+  animation: 5s ease-out 0s 1 fadein;
+
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  text-align: right;
+  font-size: 5vh;
+  margin: 0px auto;
+  width: auto;
+  padding-right: 10px;
+  border-right: 5px solid white;
+  border-radius:5px;
+  overflow: visible;
+  white-space: nowrap;
+  display: inline-block;
+  opacity: 0.95;
+  
+}
+
+.contentcont{
+  position:absolute;
+  top: 50vh;
+  width: 100%;
+}
+
+.content{
+  width: 90%;
+  min-height: 10%;
+  margin: auto;
+
+  border: 2px solid rgba(10,10,10,0);
+  border-radius: 20px 20px 0px 0px;
+  background-color: rgba(10,10,10,0.75);
+
+  padding: 15px ;
+  font-family: arial;
+  text-align: justify;
+}
+
+.content h2{
+  
+  text-align: center;
+  font-weight:bold;
+  font-size:3vh;
+  padding: 10px
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
