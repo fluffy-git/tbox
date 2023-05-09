@@ -90,9 +90,9 @@
 
   .buttonboxcont{
     transform: translate(0px, -1000px);
-    opacity: 1;
+    opacity: 0;
   }
-  
+
   .iconbox{
     width: 100%;
     text-align: center;

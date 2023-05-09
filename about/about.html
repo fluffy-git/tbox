@@ -1,100 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>the tbox_</title>
-
-  <link rel="icon" type="image/x-icon" href="../logo.svg">
-  <link href="../css/base.css" rel="stylesheet" type="text/css" />
-  <link href="../css/nav.css" rel="stylesheet" type="text/css" />
-  <link href="../css/about.css" rel="stylesheet" type="text/css" />
 	
-    
-  </head>
-  
-  <body>
-    <div class="viewport">
-      
-      <div class="navdiv">
-        <nav class="nav">
-          <div class="iconbox">
-            <a href="#" class="icon" aria-label="home"></a>
-          </div>
-          <div class="buttonboxcont">
-             <ul class="buttonbox">
-               <li class="button" onclick="location.href='about/about.html'"><a href="about/about.html">about</a></li>
-               <li class="button"><a href="#">other</a></li>
-               <li class="button"><a href="#">tools</a></li>
-               <li class="button"><a href="#">projects</a></li>
-               <li class="button" onclick="location.href='../index.html'"><a href="../index.html">home</a></li>
-             </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="background"></div>
-      <div class="titlecont">
-        <div class="title"> 
-          <h1>about me</h1>
-        </div>
-      </div>
-      <div class="contentcont">
-        <div class="content">
-  
-          <h2>some stuff about me</h2>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>the tbox_</title>
+	
+		<link rel="icon" type="image/x-icon" href="../logo.svg">
+		<link href="../css/base.css" rel="stylesheet" type="text/css">
+		<link href="../css/nav.css" rel="stylesheet" type="text/css">
+		<link href="../css/about.css" rel="stylesheet" type="text/css">
+	
+	
+	</head>
+	
+	<body>
+		<div class="viewport">
+	
+			<div class="navdiv">
+				<nav class="nav">
+					<div class="iconbox">
+						<a href="#" class="icon" aria-label="home"></a>
+					</div>
+					<div class="buttonboxcont">
+						<ul class="buttonbox">
+							<li class="button" onclick="location.href='#'"><a href="about/about.html">about</a></li>
+							<li class="button"><a href="#">other</a></li>
+							<li class="button"><a href="#">tools</a></li>
+							<li class="button"><a href="#">projects</a></li>
+							<li class="button" onclick="location.href='../index.html'"><a href="../index.html">home</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="background"></div>
+			<div class="titlecont">
+				<div class="title">
+					<h1>about me</h1>
+				</div>
+			</div>
+			<div class="contentcont">
+				<div class="content">
+	
+					<h2>some stuff about me</h2>
+	
+	
+	
+					<div class="contbox">
+	
+						<div class="textcont">
+							<h2> about who?</h2>
+	
+							<p>uhhhhhh uhuhuhhuh mhhhhhhhhhhhhhhhh the sillyyyy placholder</p>
 
-					
-					
-          <div class="contbox">
-
-            <div class="textcont">
-              text text text
-            </div>
-            <div class="misccont">
-
+							<div class="pfpbox"> <div class="pfp"> </div> </div>
+	
+						</div>
+						<div class="misccont">
 							<table id="player" class="musicbox">
-								<tr >
-									<td class="coverimgtd">
-										<img id="player-album-art" class="coverimg"/>
-									</td> 
+								<tr>
+									<td colspan="2" class="playerlogo" onclick="location.href='https://github.com/fluffy-git/spotinfo.js'">
+										<img src="../projects/spotinfo.js/spotinfo.js.full.svg" alt="spotinfo.js logo"> by fluffy </td>
 								</tr>
 								<tr>
-									<td>
-										<div class="songinfocont">
-											<div id="player-status" class="songinfostatus"></div>
-											<div id="player-song" class="songinfosong"></div>
-											<div id="player-artist" class="songinfoartist"></div>
+									<td colspan="2" class="coverimgtd">
+										<img id="player-album-art" class="coverimg" src="#" alt="Song-cover">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="padding-left: 10px;">
+										<div id="songinfocontent" class="songinfocont"></div>
+										<div id="player-status" class="songinfostatus"></div>
+										<div id="player-song" class="songinfosong"></div>
+										<div id="player-artist" class="songinfoartist"></div>
 									</td>
 								</tr>
 								<tr>
 									<td colspan="2" id="player-pt">
-											
-											<div
-												id="player-progress-back" class="songinfoplayerprogressback">
-												<div
-													id="player-progress" class="songinfoplayerprogress"></div>
-											</div>
-										
-											<div
-												id="player-time"
-												class="songinfoplayertime"
-											></div>
-										
+	
+										<div id="player-progress-back" class="songinfoplayerprogressback">
+											<div id="player-progress" class="songinfoplayerprogress"></div>
 										</div>
+										<div id="player-time" class="songinfoplayertime"></div>
 									</td>
 								</tr>
-							</table>
-							
-            </div>
-            
-          </div>
-          
-        </div>
-      </div>
-    </div>
+								<tr>
+									<td class="songunder left" onclick="location.reload();"> stuck? click me</td>
+									<td class="songunder right" onclick="location.href='https://github.com/fluffy-git/spotinfo.js'"> source
+									</td>
+								</tr>
+							</table> <!-- most complex fucking shit yet -->
+						</div>
+	
+					</div>
+	
+				</div>
+	
+			</div>
+		</div>
+	
+		<script src="spotinfo.js"></script>
+	
+	</body>
 
-		<script src="spotify.js"></script> 
-		
-  </body>
 </html>

@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100&family=Montserrat:wght@100&family=Source+Sans+Pro:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100&family=Montserrat:wght@100&family=Source+Sans+Pro:wght@200;400;700&family=Darumadrop+One&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
 
 *{
   margin: 0px;
   padding: 0px;
+	transition: 0.5s;
 }
 
 html{background-color: black;}
