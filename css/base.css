@@ -6,7 +6,7 @@
 	transition: 0.5s;
 }
 
-html{background-color: black;}
+html{background-color: black;scroll-behavior: smooth !important;}
 
 .viewport{
   background-color: #111;
@@ -17,6 +17,7 @@ html{background-color: black;}
   width: 100vw;
   animation: 1s ease-out 0s 1 fadein;
 
+	
 }
 
 ::-webkit-scrollbar {
@@ -48,7 +49,7 @@ html{background-color: black;}
 
 .title{
   text-align: right;
-  font-size: 5vh;
+  font-size: 4.5vh;
   margin: 0px auto;
   width: auto;
   padding-right: 10px;
@@ -73,12 +74,14 @@ html{background-color: black;}
   margin: auto;
 
   border: 2px solid rgba(10,10,10,0);
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px;
   background-color: rgba(10,10,10,0.75);
 
   padding: 15px ;
   font-family: arial;
   text-align: justify;
+
+	margin-bottom: 50px;
 }
 
 .content h2{
@@ -89,6 +92,58 @@ html{background-color: black;}
   padding: 10px
 }
 
+.footercont{
+	margin-top: 20px;
+	width: 100%;
+	position: absolute;
+  bottom: 0;
+}
+
+.footer{
+	width: 90%;
+  margin: 0px auto;
+	background-color: rgba(0,0,0, 0.8);
+	padding:5px 20px;
+	border: 0px black solid;
+	border-radius: 20px 20px 0px 0px;
+	overflow: hidden;
+}
+
+.footleft{
+	float: left;
+}
+
+.footright{
+	float: right;
+}
+
+.clickable{
+	cursor: pointer;
+	text-decoration: none;
+	transition: 1s;
+	color: #d3b3ff;
+}
+
+.clickable:hover{
+	color: #ac6fff;
+}
+
+.nonclickable{
+	text-decoration: none;
+	color: #fff;
+}
+  
+.sub{
+	text-align: center;
+	font-size: 20px;
+	display: block;
+}
+
+.explain{
+	text-align: center;
+	font-size: 24px;
+}
+
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -96,4 +151,21 @@ html{background-color: black;}
   100% {
     opacity: 1;
   }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .footleft, .footright{
+	float: none;
+	margin: 5px auto;
+	display: table;
 }

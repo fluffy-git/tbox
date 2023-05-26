@@ -1,0 +1,24 @@
+
+.content{
+	text-align: center;
+}
+
+.logo{
+	border-right: none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+img{
+	border-radius: 15px;
+}
+
+
+
+.source{
+	font-size: 60px;
+
+	text-align: center;
+}

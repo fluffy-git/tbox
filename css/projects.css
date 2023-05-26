@@ -1,0 +1,66 @@
+.background{
+  background-image: url(../index/banner.webp)
+}
+
+.projectlistcont{
+	padding: 25px 0px;
+	width: 100%;
+
+	
+}
+
+.projectlist{
+	width: 90%;
+	margin: 0 auto;
+	height: 1425px;
+	border: black 0px solid;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,0.65);
+}
+
+.projects{
+	list-style-type: none;
+	padding: 10px;
+	height: 1500px;
+}
+
+.project{
+	margin: 20px auto;
+	padding: 20px;
+
+	width: 90%;
+	height: 400px;
+	background-color: rgba(0,0,0,0.65);
+	border: black 0px solid;
+	border-radius: 15px;
+
+	text-align: center;
+}
+
+.project:hover{
+	background-color: rgba(25,25,25,0.65);
+	cursor: pointer;
+}
+
+.projectdiv{
+	font-size:22px;
+}
+
+.projectdiv h3{
+	font-size:32px;
+	padding: 20px;
+}
+
+.projectdivcont{
+	font-size: 32px;
+	margin: 0 auto;
+}
+
+.projectdivcont img{
+	height:200px;
+	border-radius:15px;
+}
+
+.footercont {
+	position:relative;
+}

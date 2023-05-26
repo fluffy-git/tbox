@@ -1,0 +1,14 @@
+.background{
+  background-image: url(../../index/banner.webp)
+}
+
+.yt{
+	width:450px;
+	height: 600px;
+	border-radius: 15px
+}
+
+img{
+	width: 1000px;
+	cursor:pointer
+}

@@ -19,23 +19,65 @@
 
 .pfpbox{
 	width: 100%;
-	height: 10vh;
+	height: auto;
+	margin: 20px 0px;
 }
 
 .pfp{
-	width: 10vw;
-	height: auto;
-	background-image: url();
+	width: 302px;
+	height: 302px;
+	background-image: url(../about/me.webp);
 	margin: 0px auto;
+  border: 0px white solid;
+	border-radius: 302px;
+	background-size: cover;
+  background-position: center center;
+	transition: 1s;
+}
+
+.pfp:hover{
+	animation: rotation 1s ease-out ;
+}
+
+.infotable{
+	width: 100%;
+	height: auto;
+}
+
+.infotr{
+	width: 100%;
+	height: auto;
+	margin: 10px 0px;
+	font-family: 'M PLUS Rounded 1c';
+}
+
+.infotdcat{
+	width: 50%;
+	height: auto;
+	padding: 5px 15px;
+	text-align: right;
+	font-size: 42px;
+	vertical-align: middle;
 }
 
 
+.infotdval{
+	width: 50%;
+	height: auto;
+	padding: 5px 15px;
+	text-align: left;
 
-/* MUSIC BOX AND MISC THINGS*/
+	font-size: 32px;
+	font-weight: light ;
+	vertical-align: middle;
+}
+
+/* MUSIC BOX AND MISC THINGS */
 
 .misccont{
   float:right;
   width: 30%;
+	height: 100%;
 	padding: 25px;
 	max-width: 40%;
 
@@ -46,20 +88,19 @@
   width:100%;
 	
 	background-color: rgba(0,0,0,0.8);
-  border: rgba(0,0,0,0.8) solid 1px;
+  border: black solid 0px;
   border-radius: 15px;
 	color: rgba(256,256,256,0.8);
 	font-family: Helvetica, Arial;
 	font-size: 5vmin;
 	border-radius: 10px;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	text-align: left;
 	padding: 10px;
 	
 	transition: 1s;
 	opacity: 0;
-	
 }
 
 .mloaded{
@@ -160,13 +201,41 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+.osbox{
+	width: 100%;
+	height: auto;
+	margin: 20px 0px;
+	margin-top: 40px;
+}
+
+.os{
+	width: 302px;
+	height: 332px;
+	background-image: url(../about/eos.svg);
+	margin: 10px auto;
+	background-size: cover;
+  background-position: center center;
+	transition: 1s;
+}
+
+.ostext{
+	width: 100%;
+	padding: 5px auto;
+	transition: 1s;
+	text-align: center;
+	font-family: 'M PLUS Rounded 1c';
+	font-size:20px
+}
+
+
+/* dynamic things */
+
+@media screen and (max-width: 1400px) {
 
   .misccont,.textcont{
   	float:none;
 		max-width: 100%;
 		width: 100%;
-		boder-left: none;
 		padding: 0px;
 		border: none;
 		padding-top: 20px;
@@ -180,6 +249,19 @@
 	}
 	.songinfoartist{
 		font-size:5vw;
+	}
+
+	
+}
+
+@media screen and (max-width: 600px) {
+
+	.infotdval{
+		font-size: 5.333vw;
+	}
+	
+  .infotdcat{
+		font-size: 7vw;
 	}
 	
 }
